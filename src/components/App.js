@@ -19,7 +19,7 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: "10px" }}>
         <h1>Pics</h1>
         {/* Doesn't have to be 'onSubmit'; could be anything...when used on a unique component. */}
-        // goes up from child(SearchBar) to parent(App)
+        {/* goes up from child(SearchBar) to parent(App) */}
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>
